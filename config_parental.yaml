@@ -1,0 +1,21 @@
+---
+jellyfin:
+  server_url: null
+  api_key: null
+  user_id: null
+plugins:
+  jellyfin_api:
+    enabled: false
+  web_json:
+    enabled: true
+    list_ids:
+      - name: 'Parental'
+        password: ''
+        sort_title: '+050_0_parental'
+        sort_order: 'SortName'
+        clear_collection: false
+        item_tag: 'parental'
+        lists:
+          list:
+            - 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_parental_movies.json'
+            - 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_parental_tv.json'

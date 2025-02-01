@@ -1,0 +1,26 @@
+---
+jellyfin:
+  server_url: null
+  api_key: null
+  user_id: null
+plugins:
+  jellyfin_api:
+    enabled: true
+    list_ids:
+      - name: 'Documentaries'
+        sort_title: '+051_0_documentary'
+        sort_order: 'SortName'
+        clear_collection: false
+        query_params:
+          - genres:
+              - 'Documentary'
+            sortBy:
+              - 'SortName'
+            includeItemTypes:
+              - 'Movie'
+          - genres:
+              - 'Documentary'
+            sortBy:
+              - 'SortName'
+            includeItemTypes:
+              - 'Series'

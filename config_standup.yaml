@@ -1,0 +1,19 @@
+---
+jellyfin:
+  server_url: null
+  api_key: null
+  user_id: null
+plugins:
+  jellyfin_api:
+    enabled: false
+  web_json:
+    enabled: true
+    list_ids:
+      - name: 'Stand-up'
+        password: ''
+        sort_title: '+052_0_standup'
+        sort_order: 'SortName'
+        clear_collection: false
+        lists:
+          list:
+            - 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_stand-up_all.json'

@@ -1,0 +1,72 @@
+---
+jellyfin:
+  server_url: null
+  api_key: null
+  user_id: null
+plugins:
+  jellyfin_api:
+    enabled: true
+    list_ids:
+      - name: 'Random'
+        sort_title: '+010_0_random'
+        sort_order: 'SortName'
+        clear_collection: true
+        query_params:
+          - limit:
+              - '250'
+            minCriticRating:
+              - '5'
+            sortBy:
+              - 'Random'
+            includeItemTypes:
+              - 'Movie'
+          - limit:
+              - '250'
+            minCriticRating:
+              - '5'
+            sortBy:
+              - 'Random'
+            includeItemTypes:
+              - 'Series'
+      - name: 'Recently Added'
+        sort_title: '+010_1_recently_added'
+        sort_order: 'Default'
+        clear_collection: true
+        query_params:
+          - limit:
+              - '100'
+            sortBy:
+              - 'DateCreated'
+            sortOrder:
+              - 'Descending'
+            includeItemTypes:
+              - 'Movie'
+          - limit:
+              - '100'
+            sortBy:
+              - 'DateCreated'
+            sortOrder:
+              - 'Descending'
+            includeItemTypes:
+              - 'Series'
+      - name: 'Recently Released'
+        sort_title: '+010_2_recently_released'
+        sort_order: 'Default'
+        clear_collection: true
+        query_params:
+          - limit:
+              - '100'
+            sortBy:
+              - 'PremiereDate'
+            sortOrder:
+              - 'Descending'
+            includeItemTypes:
+              - 'Movie'
+          - limit:
+              - '100'
+            sortBy:
+              - 'PremiereDate'
+            sortOrder:
+              - 'Descending'
+            includeItemTypes:
+              - 'Series'

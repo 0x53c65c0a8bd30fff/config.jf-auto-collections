@@ -1,0 +1,276 @@
+---
+jellyfin:
+  server_url: null
+  api_key: null
+  user_id: null
+plugins:
+  jellyfin_api:
+    enabled: false
+  web_json:
+    enabled: true
+    clear_collection: true
+    list_ids:
+      - name: 'Trending'
+        password: ''
+        sort_title: '+020_0_trending'
+        sort_order: 'Default'
+        clear_collection: true
+        lists:
+          list:
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_trending_movies.json'
+              llimit: 50
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_trending_tv.json'
+              llimit: 50
+      - name: 'Popular'
+        password: ''
+        sort_title: '+020_1_popular'
+        sort_order: 'Default'
+        clear_collection: true
+        lists:
+          list:
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_popular_movies_all.json'
+              llimit: 100
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_popular_tv_all.json'
+              llimit: 100
+      - name: 'Most Watched Daily'
+        password: ''
+        sort_title: '+030_0_most_watched_daily'
+        sort_order: 'Default'
+        clear_collection: true
+        lists:
+          list:
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/trakt/trakt_watched_daily_movies.json'
+              llimit: 20
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/trakt/trakt_watched_daily_tv.json'
+              llimit: 20
+      - name: 'Popular in Action'
+        password: ''
+        sort_title: '+080_popular_action'
+        sort_order: 'Default'
+        clear_collection: true
+        lists:
+          list:
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_popular_movies_all_action.json'
+              llimit: 250
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_popular_tv_all_action.json'
+              llimit: 250
+      - name: 'Popular in Adventure'
+        password: ''
+        sort_title: '+080_popular_adventure'
+        sort_order: 'Default'
+        clear_collection: true
+        lists:
+          list:
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_popular_movies_all_adventure.json'
+              llimit: 250
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_popular_tv_all_adventure.json'
+              llimit: 250
+      - name: 'Popular in Animation'
+        password: ''
+        sort_title: '+080_popular_animation'
+        sort_order: 'Default'
+        clear_collection: true
+        lists:
+          list:
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_popular_movies_all_animation.json'
+              llimit: 250
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_popular_tv_all_animation.json'
+              llimit: 250
+      - name: 'Popular in Biography'
+        password: ''
+        sort_title: '+080_popular_biography'
+        sort_order: 'Default'
+        clear_collection: true
+        lists:
+          list:
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_popular_movies_all_biography.json'
+              llimit: 250
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_popular_tv_all_biography.json'
+              llimit: 250
+      - name: 'Popular in Comedy'
+        password: ''
+        sort_title: '+080_popular_comedy'
+        sort_order: 'Default'
+        clear_collection: true
+        lists:
+          list:
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_popular_movies_all_comedy.json'
+              llimit: 250
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_popular_tv_all_comedy.json'
+              llimit: 250
+      - name: 'Popular in Crime'
+        password: ''
+        sort_title: '+080_popular_crime'
+        sort_order: 'Default'
+        clear_collection: true
+        lists:
+          list:
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_popular_movies_all_crime.json'
+              llimit: 250
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_popular_tv_all_crime.json'
+              llimit: 250
+      - name: 'Popular in Documentary'
+        password: ''
+        sort_title: '+080_popular_documentary'
+        sort_order: 'Default'
+        clear_collection: true
+        lists:
+          list:
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_popular_movies_all_documentary.json'
+              llimit: 250
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_popular_tv_all_documentary.json'
+              llimit: 250
+      - name: 'Popular in Drama'
+        password: ''
+        sort_title: '+080_popular_drama'
+        sort_order: 'Default'
+        clear_collection: true
+        lists:
+          list:
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_popular_movies_all_drama.json'
+              llimit: 250
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_popular_tv_all_drama.json'
+              llimit: 250
+      - name: 'Popular in Family'
+        password: ''
+        sort_title: '+080_popular_family'
+        sort_order: 'Default'
+        clear_collection: true
+        lists:
+          list:
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_popular_movies_all_family.json'
+              llimit: 250
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_popular_tv_all_family.json'
+              llimit: 250
+      - name: 'Popular in Fantasy'
+        password: ''
+        sort_title: '+080_popular_fantasy'
+        sort_order: 'Default'
+        clear_collection: true
+        lists:
+          list:
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_popular_movies_all_fantasy.json'
+              llimit: 250
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_popular_tv_all_fantasy.json'
+              llimit: 250
+      - name: 'Popular in History'
+        password: ''
+        sort_title: '+080_popular_history'
+        sort_order: 'Default'
+        clear_collection: true
+        lists:
+          list:
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_popular_movies_all_history.json'
+              llimit: 250
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_popular_tv_all_history.json'
+              llimit: 250
+      - name: 'Popular in Horror'
+        password: ''
+        sort_title: '+080_popular_horror'
+        sort_order: 'Default'
+        clear_collection: true
+        lists:
+          list:
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_popular_movies_all_horror.json'
+              llimit: 250
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_popular_tv_all_horror.json'
+              llimit: 250
+      - name: 'Popular in Music'
+        password: ''
+        sort_title: '+080_popular_music'
+        sort_order: 'Default'
+        clear_collection: true
+        lists:
+          list:
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_popular_movies_all_music.json'
+              llimit: 250
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_popular_tv_all_music.json'
+              llimit: 250
+      - name: 'Popular in Musicals'
+        password: ''
+        sort_title: '+080_popular_musicals'
+        sort_order: 'Default'
+        clear_collection: true
+        lists:
+          list:
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_popular_movies_all_musical.json'
+              llimit: 250
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_popular_tv_all_musical.json'
+              llimit: 250
+      - name: 'Popular in Mystery'
+        password: ''
+        sort_title: '+080_popular_mystery'
+        sort_order: 'Default'
+        clear_collection: true
+        lists:
+          list:
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_popular_movies_all_mystery.json'
+              llimit: 250
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_popular_tv_all_mystery.json'
+              llimit: 250
+      - name: 'Popular in Romance'
+        password: ''
+        sort_title: '+080_popular_romance'
+        sort_order: 'Default'
+        clear_collection: true
+        lists:
+          list:
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_popular_movies_all_romance.json'
+              llimit: 250
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_popular_tv_all_romance.json'
+              llimit: 250
+      - name: 'Popular in Sci-Fi'
+        password: ''
+        sort_title: '+080_popular_sci-fi'
+        sort_order: 'Default'
+        clear_collection: true
+        lists:
+          list:
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_popular_movies_all_science-fiction.json'
+              llimit: 250
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_popular_tv_all_science-fiction.json'
+              llimit: 250
+      - name: 'Popular in Sport'
+        password: ''
+        sort_title: '+080_popular_sport'
+        sort_order: 'Default'
+        clear_collection: true
+        lists:
+          list:
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_popular_movies_all_sport.json'
+              llimit: 250
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_popular_tv_all_sport.json'
+              llimit: 250
+      - name: 'Popular in Thriller'
+        password: ''
+        sort_title: '+080_popular_thriller'
+        sort_order: 'Default'
+        clear_collection: true
+        lists:
+          list:
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_popular_movies_all_thriller.json'
+              llimit: 250
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_popular_tv_all_thriller.json'
+              llimit: 250
+      - name: 'Popular in War'
+        password: ''
+        sort_title: '+080_popular_war'
+        sort_order: 'Default'
+        clear_collection: true
+        lists:
+          list:
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_popular_movies_all_war.json'
+              llimit: 250
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_popular_tv_all_war.json'
+              llimit: 250
+      - name: 'Popular in Western'
+        password: ''
+        sort_title: '+080_popular_western'
+        sort_order: 'Default'
+        clear_collection: true
+        lists:
+          list:
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_popular_movies_all_western.json'
+              llimit: 250
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_popular_tv_all_western.json'
+              llimit: 250

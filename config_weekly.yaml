@@ -1,0 +1,405 @@
+---
+jellyfin:
+  server_url: null
+  api_key: null
+  user_id: null
+plugins:
+  jellyfin_api:
+    enabled: false
+  web_json:
+    enabled: true
+    clear_collection: true
+    list_ids:
+      - name: 'Top-Rated'
+        password: ''
+        sort_title: '+020_3_top-rated'
+        sort_order: 'Default'
+        clear_collection: true
+        lists:
+          list:
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_top-rated_movies_all.json'
+              llimit: 250
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_top-rated_tv_all.json'
+              llimit: 250
+      - name: 'Most Watched Weekly'
+        password: ''
+        sort_title: '+030_1_most_watched_weekly'
+        sort_order: 'Default'
+        clear_collection: true
+        lists:
+          list:
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/trakt/trakt_watched_weekly_movies.json'
+              llimit: 50
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/trakt/trakt_watched_weekly_tv.json'
+              llimit: 50
+      - name: 'Most Watched Monthly'
+        password: ''
+        sort_title: '+030_2_most_watched_monthly'
+        sort_order: 'Default'
+        clear_collection: true
+        lists:
+          list:
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/trakt/trakt_watched_monthly_movies.json'
+              llimit: 100
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/trakt/trakt_watched_monthly_tv.json'
+              llimit: 100
+      - name: 'Most Watched Yearly'
+        password: ''
+        sort_title: '+030_3_most_watched_yearly'
+        sort_order: 'Default'
+        clear_collection: true
+        lists:
+          list:
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/trakt/trakt_watched_yearly_movies.json'
+              llimit: 200
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/trakt/trakt_watched_yearly_tv.json'
+              llimit: 200
+      - name: 'Most Watched All'
+        password: ''
+        sort_title: '+030_4_most_watched_all'
+        sort_order: 'Default'
+        clear_collection: true
+        lists:
+          list:
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/trakt/trakt_watched_all_movies.json'
+              llimit: 250
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/trakt/trakt_watched_all_tv.json'
+              llimit: 250
+      - name: 'Top Rated of the 1930s'
+        password: ''
+        sort_title: '+060_Z_top-rated_1930s'
+        sort_order: 'Default'
+        clear_collection: true
+        lists:
+          list:
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_top-rated_movies_all_1930s.json'
+              llimit: 250
+      - name: 'Top Rated of the 1940s'
+        password: ''
+        sort_title: '+060_Y_top-rated_1940s'
+        sort_order: 'Default'
+        clear_collection: true
+        lists:
+          list:
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_top-rated_movies_all_1940s.json'
+              llimit: 250
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_top-rated_tv_all_1940s.json'
+              llimit: 250
+      - name: 'Top Rated of the 1950s'
+        password: ''
+        sort_title: '+060_X_top-rated_1950s'
+        sort_order: 'Default'
+        clear_collection: true
+        lists:
+          list:
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_top-rated_movies_all_1950s.json'
+              llimit: 250
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_top-rated_tv_all_1950s.json'
+              llimit: 250
+      - name: 'Top Rated of the 1960s'
+        password: ''
+        sort_title: '+060_W_top-rated_1960s'
+        sort_order: 'Default'
+        clear_collection: true
+        lists:
+          list:
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_top-rated_movies_all_1960s.json'
+              llimit: 250
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_top-rated_tv_all_1960s.json'
+              llimit: 250
+      - name: 'Top Rated of the 1970s'
+        password: ''
+        sort_title: '+060_V_top-rated_1970s'
+        sort_order: 'Default'
+        lists:
+          list:
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_top-rated_movies_all_1970s.json'
+              llimit: 250
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_top-rated_tv_all_1970s.json'
+              llimit: 250
+      - name: 'Top Rated of the 1980s'
+        password: ''
+        sort_title: '+060_U_top-rated_1980s'
+        sort_order: 'Default'
+        clear_collection: true
+        lists:
+          list:
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_top-rated_movies_all_1980s.json'
+              llimit: 250
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_top-rated_tv_all_1980s.json'
+              llimit: 250
+      - name: 'Top Rated of the 1990s'
+        password: ''
+        sort_title: '+060_T_top-rated_1990s'
+        sort_order: 'Default'
+        clear_collection: true
+        lists:
+          list:
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_top-rated_movies_all_1990s.json'
+              llimit: 250
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_top-rated_tv_all_1990s.json'
+              llimit: 250
+      - name: 'Top Rated of the 2000s'
+        password: ''
+        sort_title: '+060_S_top-rated_2000s'
+        sort_order: 'Default'
+        clear_collection: true
+        lists:
+          list:
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_top-rated_movies_all_2000s.json'
+              llimit: 250
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_top-rated_tv_all_2000s.json'
+              llimit: 250
+      - name: 'Top Rated of the 2010s'
+        password: ''
+        sort_title: '+060_R_top-rated_2010s'
+        sort_order: 'Default'
+        clear_collection: true
+        lists:
+          list:
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_top-rated_movies_all_2010s.json'
+              llimit: 250
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_top-rated_tv_all_2010s.json'
+              llimit: 250
+      - name: 'Top Rated of the 2020s'
+        password: ''
+        sort_title: '+060_Q_top-rated_2020s'
+        sort_order: 'Default'
+        clear_collection: true
+        lists:
+          list:
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_top-rated_movies_all_2020s.json'
+              llimit: 250
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_top-rated_tv_all_2020s.json'
+              llimit: 250
+      - name: 'Top-Rated in Action'
+        password: ''
+        sort_title: '+100_top-rated_action'
+        sort_order: 'Default'
+        clear_collection: true
+        lists:
+          list:
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_top-rated_movies_all_action.json'
+              llimit: 250
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_top-rated_tv_all_action.json'
+              llimit: 250
+      - name: 'Top-Rated in Adventure'
+        password: ''
+        sort_title: '+100_top-rated_adventure'
+        sort_order: 'Default'
+        clear_collection: true
+        lists:
+          list:
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_top-rated_movies_all_adventure.json'
+              llimit: 250
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_top-rated_tv_all_adventure.json'
+              llimit: 250
+      - name: 'Top-Rated in Animation'
+        password: ''
+        sort_title: '+100_top-rated_animation'
+        sort_order: 'Default'
+        clear_collection: true
+        lists:
+          list:
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_top-rated_movies_all_animation.json'
+              llimit: 250
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_top-rated_tv_all_animation.json'
+              llimit: 250
+      - name: 'Top-Rated in Biography'
+        password: ''
+        sort_title: '+100_top-rated_biography'
+        sort_order: 'Default'
+        clear_collection: true
+        lists:
+          list:
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_top-rated_movies_all_biography.json'
+              llimit: 250
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_top-rated_tv_all_biography.json'
+              llimit: 250
+      - name: 'Top-Rated in Comedy'
+        password: ''
+        sort_title: '+100_top-rated_comedy'
+        sort_order: 'Default'
+        clear_collection: true
+        lists:
+          list:
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_top-rated_movies_all_comedy.json'
+              llimit: 250
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_top-rated_tv_all_comedy.json'
+              llimit: 250
+      - name: 'Top-Rated in Crime'
+        password: ''
+        sort_title: '+100_top-rated_crime'
+        sort_order: 'Default'
+        clear_collection: true
+        lists:
+          list:
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_top-rated_movies_all_crime.json'
+              llimit: 250
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_top-rated_tv_all_crime.json'
+              llimit: 250
+      - name: 'Top-Rated in Documentary'
+        password: ''
+        sort_title: '+100_top-rated_documentary'
+        sort_order: 'Default'
+        clear_collection: true
+        lists:
+          list:
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_top-rated_movies_all_documentary.json'
+              llimit: 250
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_top-rated_tv_all_documentary.json'
+              llimit: 250
+      - name: 'Top-Rated in Drama'
+        password: ''
+        sort_title: '+100_top-rated_drama'
+        sort_order: 'Default'
+        clear_collection: true
+        lists:
+          list:
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_top-rated_movies_all_drama.json'
+              llimit: 250
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_top-rated_tv_all_drama.json'
+              llimit: 250
+      - name: 'Top-Rated in Family'
+        password: ''
+        sort_title: '+100_top-rated_family'
+        sort_order: 'Default'
+        clear_collection: true
+        lists:
+          list:
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_top-rated_movies_all_family.json'
+              llimit: 250
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_top-rated_tv_all_family.json'
+              llimit: 250
+      - name: 'Top-Rated in Fantasy'
+        password: ''
+        sort_title: '+100_top-rated_fantasy'
+        sort_order: 'Default'
+        clear_collection: true
+        lists:
+          list:
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_top-rated_movies_all_fantasy.json'
+              llimit: 250
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_top-rated_tv_all_fantasy.json'
+              llimit: 250
+      - name: 'Top-Rated in History'
+        password: ''
+        sort_title: '+100_top-rated_history'
+        sort_order: 'Default'
+        clear_collection: true
+        lists:
+          list:
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_top-rated_movies_all_history.json'
+              llimit: 250
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_top-rated_tv_all_history.json'
+              llimit: 250
+      - name: 'Top-Rated in Horror'
+        password: ''
+        sort_title: '+100_top-rated_horror'
+        sort_order: 'Default'
+        clear_collection: true
+        lists:
+          list:
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_top-rated_movies_all_horror.json'
+              llimit: 250
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_top-rated_tv_all_horror.json'
+              llimit: 250
+      - name: 'Top-Rated in Music'
+        password: ''
+        sort_title: '+100_top-rated_music'
+        sort_order: 'Default'
+        clear_collection: true
+        lists:
+          list:
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_top-rated_movies_all_music.json'
+              llimit: 250
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_top-rated_tv_all_music.json'
+              llimit: 250
+      - name: 'Top-Rated in Musicals'
+        password: ''
+        sort_title: '+100_top-rated_musicals'
+        sort_order: 'Default'
+        clear_collection: true
+        lists:
+          list:
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_top-rated_movies_all_musical.json'
+              llimit: 250
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_top-rated_tv_all_musical.json'
+              llimit: 250
+      - name: 'Top-Rated in Mystery'
+        password: ''
+        sort_title: '+100_top-rated_mystery'
+        sort_order: 'Default'
+        clear_collection: true
+        lists:
+          list:
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_top-rated_movies_all_mystery.json'
+              llimit: 250
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_top-rated_tv_all_mystery.json'
+              llimit: 250
+      - name: 'Top-Rated in Romance'
+        password: ''
+        sort_title: '+100_top-rated_romance'
+        sort_order: 'Default'
+        clear_collection: true
+        lists:
+          list:
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_top-rated_movies_all_romance.json'
+              llimit: 250
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_top-rated_tv_all_romance.json'
+              llimit: 250
+      - name: 'Top-Rated in Sci-Fi'
+        password: ''
+        sort_title: '+100_top-rated_sci-fi'
+        sort_order: 'Default'
+        clear_collection: true
+        lists:
+          list:
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_top-rated_movies_all_science-fiction.json'
+              llimit: 250
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_top-rated_tv_all_science-fiction.json'
+              llimit: 250
+      - name: 'Top-Rated in Sport'
+        password: ''
+        sort_title: '+100_top-rated_sport'
+        sort_order: 'Default'
+        clear_collection: true
+        lists:
+          list:
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_top-rated_movies_all_sport.json'
+              llimit: 250
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_top-rated_tv_all_sport.json'
+              llimit: 250
+      - name: 'Top-Rated in Thriller'
+        password: ''
+        sort_title: '+100_top-rated_thriller'
+        sort_order: 'Default'
+        clear_collection: true
+        lists:
+          list:
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_top-rated_movies_all_thriller.json'
+              llimit: 250
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_top-rated_tv_all_thriller.json'
+              llimit: 250
+      - name: 'Top-Rated in War'
+        password: ''
+        sort_title: '+100_top-rated_war'
+        sort_order: 'Default'
+        clear_collection: true
+        lists:
+          list:
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_top-rated_movies_all_war.json'
+              llimit: 250
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_top-rated_tv_all_war.json'
+              llimit: 250
+      - name: 'Top-Rated in Western'
+        password: ''
+        sort_title: '+100_top-rated_western'
+        sort_order: 'Default'
+        clear_collection: true
+        lists:
+          list:
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_top-rated_movies_all_western.json'
+              llimit: 250
+            - url: 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/dynamic_top-rated_tv_all_western.json'
+              llimit: 250

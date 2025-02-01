@@ -1,0 +1,38 @@
+---
+jellyfin:
+  server_url: null
+  api_key: null
+  user_id: null
+plugins:
+  jellyfin_api:
+    enabled: false
+  web_json:
+    enabled: true
+    list_ids:
+      - name: 'Christmas'
+        schedule: 'range(12/01-12/29)'
+        password: ''
+        sort_title: '+059_0_seasonal'
+        sort_order: 'SortName'
+        clear_collection: false
+        lists:
+          list:
+            - 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/unified_theme_christmas.json'
+      - name: 'Halloween'
+        schedule: 'range(10/28-10/31)'
+        password: ''
+        sort_title: '+059_0_seasonal'
+        sort_order: 'SortName'
+        clear_collection: false
+        lists:
+          list:
+            - 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/unified_theme_halloween.json'
+      - name: 'Valentines'
+        schedule: 'range(2/13-2/14)'
+        password: ''
+        sort_title: '+059_0_seasonal'
+        sort_order: 'SortName'
+        clear_collection: false
+        lists:
+          list:
+            - 'https://github.com/0x53c65c0a8bd30fff/meta.jf-auto-collections/raw/refs/heads/mdblist/unified_theme_valentines.json'
